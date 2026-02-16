@@ -25,8 +25,11 @@
 
             <div class="nav-links">
                 <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
                 <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
                 <a href="#projects" class="nav-link">Projects</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
         </div>
@@ -35,28 +38,16 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container">
-            <div class="hero-image">
-                <div class="glowing-orb"></div>
-                <div class="avatar-container">
-                    <!-- Primary online image with local fallback -->
-                    <img src="https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg" 
-                         alt="David Kamau" 
-                         class="avatar"
-                         onerror="this.src='images/david.png'">
-                    <div class="avatar-glow"></div>
-                </div>
-            </div>
             <div class="hero-content">
                 <h1 class="hero-title">
                     <span class="title-word title-word-1">Innovate.</span>
                     <span class="title-word title-word-2">Create.</span>
                     <span class="title-word title-word-3">Elevate.</span>
                 </h1>
-                <p class="hero-subtitle">Hello, I'm <span class="name-highlight">David Kamau</span></p>
                 <p class="hero-description">Full-Stack Software Developer. crafting immersive digital experiences with modern technologies.</p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">View My Works</a>
-                    <a href="/Portfoli-o-main/images/David_Kamau_Resume.pdf" 
+                    <a href="images/David_Kamau_Resume.pdf" 
                        class="btn btn-secondary" 
                        download>Download My CV</a>
                 </div>
@@ -73,150 +64,179 @@
             </div>
         </div>
     </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About <span>Me</span></h2>
+            <p class="section-subtitle">Get to know me better</p>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Full-Stack Developer & Problem Solver</h3>
+                    <p>I'm a passionate Full-Stack Software Developer based in Nairobi, Kenya, with a strong foundation in modern web technologies and a drive to create innovative digital solutions.</p>
+                    <p>My journey in software development has been fueled by curiosity and a commitment to continuous learning. I specialize in building scalable applications using React.js, Node.js, and various database technologies, always focusing on clean code and user experience.</p>
+                    <p>When I'm not coding, I enjoy exploring new technologies, contributing to open-source projects, and staying updated with the latest industry trends. I believe in writing code that not only works but is maintainable, efficient, and elegant.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h4 class="stat-number" data-target="50">0</h4>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4 class="stat-number" data-target="3">0</h4>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4 class="stat-number" data-target="20">0</h4>
+                            <p>Technologies Mastered</p>
+                        </div>
+                    </div>
+                    <div class="about-buttons">
+                        <a href="#contact" class="btn btn-primary">Hire Me</a>
+                        <a href="#projects" class="btn btn-secondary">View Projects</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
             <h2 class="section-title">My <span>Skills</span></h2>
-            <p class="section-subtitle">Technologies I work with</p>
+            <p class="section-subtitle">Technologies and expertise I work with</p>
 
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-html5"></i>
+            <div class="skills-categories">
+                <!-- Full-Stack Development -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Full-Stack Development</h3>
                     </div>
-                    <h3>HTML5</h3>
-                    <div class="skill-progress">
-                        <div class="progress-bar" style="width: 70%"></div>
+                    <div class="category-content">
+                        <div class="category-subsection">
+                            <h4>Frontend</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">HTML5</span>
+                                <span class="skill-tag">CSS3</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">Responsive Design</span>
+                                <span class="skill-tag">UI Integration</span>
+                            </div>
+                        </div>
+                        <div class="category-subsection">
+                            <h4>Backend</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">PHP (Laravel)</span>
+                                <span class="skill-tag">RESTful APIs</span>
+                                <span class="skill-tag">MVC Architecture</span>
+                                <span class="skill-tag">Authentication & Authorization</span>
+                                <span class="skill-tag">Error Handling</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-css3-alt"></i>
+                <!-- Database Management -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Database Management</h3>
                     </div>
-                    <h3>CSS3</h3>
-                    <div class="skill-progress">
-                        <div class="progress-bar" style="width: 70%"></div>
-                    </div>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-js"></i>
-                    </div>
-                    <h3>JavaScript</h3>
-                    <div class="skill-progress">
-                        <div class="progress-bar" style="width: 65%"></div>
-                    </div>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-react"></i>
-                    </div>
-                    <h3>React.js</h3>
-                    <div class="skill-progress">
-                        <div class="progress-bar" style="width: 75%"></div>
+                    <div class="category-content">
+                        <div class="skill-tags">
+                            <span class="skill-tag">MySQL Database Design</span>
+                            <span class="skill-tag">Query Optimization</span>
+                            <span class="skill-tag">Backup & Recovery</span>
+                            <span class="skill-tag">Data Modeling</span>
+                            <span class="skill-tag">Migrations</span>
+                            <span class="skill-tag">Seeders</span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-code"></i>
+                <!-- Cloud & Deployment (AWS) -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                        <h3>Cloud & Deployment (AWS)</h3>
                     </div>
-                    <h3>REST API</h3>
-                    <div class="skill-progress">
-                        <div class="progress-bar" style="width: 80%"></div>
-                    </div>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-node-js"></i>
-                    </div>
-                    <h3>Node.js</h3>
-                    <div class="skill-progress">
-                        <div class="progress-bar" style="width: 70%"></div>
-                    </div>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-java"></i>
-                    </div>
-                    <h3>Java</h3>
-                    <div class="skill-progress">
-                        <div class="progress-bar" style="width: 80%"></div>
+                    <div class="category-content">
+                        <div class="skill-tags">
+                            <span class="skill-tag">EC2 Instance Setup</span>
+                            <span class="skill-tag">Load Balancer Configuration</span>
+                            <span class="skill-tag">Security Groups</span>
+                            <span class="skill-tag">Server Configuration</span>
+                            <span class="skill-tag">Manual & CI/CD Deployments</span>
+                            <span class="skill-tag">SSH Key Management</span>
+                            <span class="skill-tag">Server Optimization</span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-python"></i>
+                <!-- DevOps & Version Control -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <h3>DevOps & Version Control</h3>
                     </div>
-                    <h3>Python</h3>
-                    <div class="skill-progress">
-                        <div class="progress-bar" style="width: 80%"></div>
-                    </div>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <h3>MySQL</h3>
-                    <div class="skill-progress">
-                        <div class="progress-bar" style="width: 70%"></div>
-                    </div>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <h3>MongoDB</h3>
-                    <div class="skill-progress">
-                        <div class="progress-bar" style="width: 80%"></div>
+                    <div class="category-content">
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git & GitHub</span>
+                            <span class="skill-tag">Branching</span>
+                            <span class="skill-tag">Rebasing</span>
+                            <span class="skill-tag">Conflict Resolution</span>
+                            <span class="skill-tag">GitHub Actions (CI/CD)</span>
+                            <span class="skill-tag">Environment Configuration</span>
+                            <span class="skill-tag">Debugging Failed Builds</span>
+                            <span class="skill-tag">Deployment Issues</span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-redis"></i>
+                <!-- Automation & Integrations -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>Automation & Integrations</h3>
                     </div>
-                    <h3>Redis</h3>
-                    <div class="skill-progress">
-                        <div class="progress-bar" style="width: 70%"></div>
-                    </div>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-linux"></i>
-                    </div>
-                    <h3>Linux</h3>
-                    <div class="skill-progress">
-                        <div class="progress-bar" style="width: 85%"></div>
+                    <div class="category-content">
+                        <div class="skill-tags">
+                            <span class="skill-tag">WhatsApp Bot Development</span>
+                            <span class="skill-tag">Meta Developer Integration</span>
+                            <span class="skill-tag">Third-party API Integration</span>
+                            <span class="skill-tag">Web App Automation</span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-docker"></i>
+                <!-- Tools & Workflow -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Tools & Workflow</h3>
                     </div>
-                    <h3>Docker</h3>
-                    <div class="skill-progress">
-                        <div class="progress-bar" style="width: 75%"></div>
-                    </div>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-terminal"></i>
-                    </div>
-                    <h3>Bash Scripts</h3>
-                    <div class="skill-progress">
-                        <div class="progress-bar" style="width: 80%"></div>
+                    <div class="category-content">
+                        <div class="skill-tags">
+                            <span class="skill-tag">Linux (Ubuntu Server)</span>
+                            <span class="skill-tag">Command Line</span>
+                            <span class="skill-tag">VPS Setup</span>
+                            <span class="skill-tag">Debugging</span>
+                            <span class="skill-tag">Performance Optimization</span>
+                            <span class="skill-tag">Continuous Learning</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -230,6 +250,61 @@
                     <span class="bubble">Communication</span>
                     <span class="bubble">Adaptability</span>
                     <span class="bubble">Time Management</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">My <span>Experience</span></h2>
+            <p class="section-subtitle">Professional journey and education</p>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2022 - Present</span>
+                        <h3>Full-Stack Developer</h3>
+                        <h4>Freelance / Self-Employed</h4>
+                        <p>Developing full-stack web applications using React.js, Node.js, and modern databases. Building responsive and scalable solutions for various clients.</p>
+                        <ul>
+                            <li>Built and deployed multiple web applications</li>
+                            <li>Implemented RESTful APIs and database solutions</li>
+                            <li>Collaborated with clients to deliver custom solutions</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2021 - 2022</span>
+                        <h3>Software Development Intern</h3>
+                        <h4>Tech Company</h4>
+                        <p>Gained hands-on experience in software development, working on real-world projects and learning industry best practices.</p>
+                        <ul>
+                            <li>Developed frontend components using React.js</li>
+                            <li>Worked with backend APIs and databases</li>
+                            <li>Participated in code reviews and team meetings</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2019 - 2023</span>
+                        <h3>Bachelor's Degree in Computer Science</h3>
+                        <h4>University</h4>
+                        <p>Studied computer science fundamentals, software engineering, algorithms, and data structures. Graduated with strong academic performance.</p>
+                        <ul>
+                            <li>Relevant coursework: Data Structures, Algorithms, Database Systems</li>
+                            <li>Completed multiple software development projects</li>
+                            <li>Participated in coding competitions and hackathons</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -351,6 +426,91 @@
         </div>
     </div>
 
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Client <span>Testimonials</span></h2>
+            <p class="section-subtitle">What people say about my work</p>
+
+            <div class="testimonials-container">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"David delivered an exceptional anime tracking platform that exceeded our expectations. His attention to detail and technical expertise made the project a huge success."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Client Name</h4>
+                                <p>Project Manager, ANiME BLOODLINE</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"Working with David was a pleasure. He's professional, responsive, and delivers high-quality code. The bakery website he built for us is exactly what we needed."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Client Name</h4>
+                                <p>Owner, HautNG Bakery</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"David's technical skills and problem-solving abilities are impressive. He transformed our energy monitoring concept into a functional and beautiful application."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Client Name</h4>
+                                <p>Product Manager, WattWise</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
@@ -375,7 +535,7 @@
                         </div>
                         <div class="info-content">
                             <h3>Phone</h3>
-                            <p>+254 (795) 574929
+                            <p>+254 (795) 574929</p>
                         </div>
                     </div>
 
@@ -399,7 +559,37 @@
                     </div>
                 </div>
 
-                
+                <div class="contact-form-wrapper">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder=" " required>
+                            <label for="name">Your Name</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder=" " required>
+                            <label for="email">Your Email</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder=" " required>
+                            <label for="subject">Subject</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder=" " rows="5" required></textarea>
+                            <label for="message">Your Message</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loader" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i>
+                            </span>
+                        </button>
+                        <div id="form-message" class="form-message"></div>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -417,8 +607,11 @@
                     <h3>Quick Links</h3>
                     <ul>
                         <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
                         <li><a href="#skills">Skills</a></li>
+                        <li><a href="#experience">Experience</a></li>
                         <li><a href="#projects">Projects</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -435,6 +628,13 @@
                 </div>
             </div>
     </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" class="scroll-to-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
